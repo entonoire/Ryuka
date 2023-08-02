@@ -1,0 +1,76 @@
+#
+# Here is the Ryuka config where you can modify a lot of things
+# warnings:
+# - for tempmutePermission please put something that is on -> https://javadoc.io/static/net.dv8tion/JDA/3.0.BETA_96/net/dv8tion/jda/core/Permission.html
+# - "$member", "$authorName", "$guildName" conversions are only available where are is -> #$#
+#
+prefix: "-"
+token: ""
+guild: "907681511275397191"
+color:
+  - 43 # r
+  - 45 # g
+  - 49 # b
+roles:
+  permi: "938047395692941352" # passenger
+  permii: "941065728549851188" # dev
+  permiii: "1131609114619957429" # III
+  permiv: "1131609211952963744" # IV
+  permv: "934764795406745600" # staff
+  mute: "938122574750187600"
+tempmutePermission: "BAN_MEMBERS" # see https://javadoc.io/static/net.dv8tion/JDA/3.0.BETA_96/net/dv8tion/jda/core/Permission.html /!\ also used for blr /!\
+messages:
+  runnedBy: "Exécuté par $authorName" #$#
+  errorTitle: "Erreur !"
+  idFormat: "Le membre doit être sous forme de mention ou d'id"
+  memberNotFound: "Le membre est introuvable sur le serveur !"
+  invalidUnit: "L'unité de la durée est invalide !"
+  pmEmbed: "Message important !"
+  tempmute:
+    alreadyMute: "Le membre est déjà temp mute !"
+    resultTitle: "Temp Mute"
+    resultDescription: "$member est maintenant mute" #$#
+    invalidDuration: "La durée est invalide !"
+    privateUnmuted: "hey $member ! tu sais que tu viens d'être demute de $guildName ?" #$#
+  tempmutelist:
+    noMemberTempmute: "Aucun membre est temp mute !"
+    memberNotMute: "Ce membre n'as aucun tempmute en cours !"
+    # command: -tempmutelist @member
+    memberResultTitle: "Voici les information sur le temp mute de $member" #$#
+    resultFirstFieldName: "Membre"
+    resultSecondFieldName: "Durée"
+    resultThirdFieldName: "Date de temp mute"
+    resultFourthFieldName: "Raison"
+    # command: -tempmutelist
+    resultTitle: "Voici toutes les personnes tempmute !"
+    resultToLong: "L'embed global étant trop long, settlement 5 personnes sont affichées"
+  untempmute:
+    memberUnknownButFound: "Le membre n'as pas était trouvé mais il se trouvait tous de même dans la des mutes, je viens donc de le supprimer de celle-ci !"
+    memberNotFound: "Le membre n'as pas était trouvé"
+    result: "$member a bien été unmute !" #$#
+    notMute: "Ce membre n'est pas mute !"
+  help:
+    title: "Voici toutes mes commandes !"
+  warnAdd:
+    resultTitle: "$member vient de se prendre un warn" #$#
+    resultFirstField: "Raison"
+    resultSecondField: "Nombre de warn"
+  warnList:
+    resultTitle: "Voici tous les warn de $member" #$#
+    noWarnRegistered: "Ce membre n'as aucun warn à son actif !"
+  warnRemove:
+    resultTitle: "Le warn de $member vient d'être supprimé !" #$#
+    idFormat: "Le warn id doit être sous forme de chiffre !"
+    wrongId: "L'utilisateur n'a pas de warn avec cet id !"
+  buttons:
+    notMessageAuthor: "Tu n'es pas l'auteur du message, tu ne peux pas intéragir avec celui-ci !"
+    userNotFound: "L'utilisateur est introuvable !"
+    userWarnsNotFound: "Les warns de l'utilisateur sont introuvables !"
+  blr:
+    resultTitle: "$member est maintenant blacklist !" #$#
+    pmResult: "$member est blr tu ne peut pas le grader au dessus de: $perm !" #$#
+    notFoundInList: "Le membre n'est pas blr !"
+    showResultTitle: "Voici le blr de $member" #$#
+    showNoOne: "Aucune personnes n'est blr !"
+    showResultSecondTitle: "Voice les blr actif !"
+    removeResultTitle: "Le blr de $member vient d'être supprimé !"
